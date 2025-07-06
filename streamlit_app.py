@@ -18,18 +18,14 @@ from sales_personalized_email.crew import SalesPersonalizedEmailCrew
 
 st.title("🎯 Prospect Outreach Drafts (CrewAI)")
 
-# sidebar: collect secrets once
-# with st.sidebar:
-#     st.subheader("🔑 API keys")
-#     st.text_input("OPENAI_API_KEY", type="password", key="openai_api")
-
+# In below fields - add value = "<value for the field>" for each item - during dev only
 fields = {
-    "name":          st.text_input("Prospect name", value = "Rob Headley"),
-    "title":         st.text_input("Prospect title", value= "Head of Enterprise Sales"),
-    "company":       st.text_input("Company", value= "Incident.io"),
-    "industry":      st.text_input("Industry", value= "Incident Management"),
-    "linkedin_url":  st.text_input("LinkedIn URL", value= "https://www.linkedin.com/in/robheadley37/"),
-    "our_product":   st.text_input("Your product / value prop", value= "AI Automation"),
+    "name":          st.text_input("Prospect name"),
+    "title":         st.text_input("Prospect title"),
+    "company":       st.text_input("Company"),
+    "industry":      st.text_input("Industry"),
+    "linkedin_url":  st.text_input("LinkedIn URL"),
+    "our_product":   st.text_input("Your product / value prop"),
 }
 
 if st.button("Generate email ✉️"):
