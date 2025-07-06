@@ -6,10 +6,6 @@ authors = [
     { name = "Your Name", email = "you@example.com" },
 ]
 requires-python = ">=3.10,<=3.13"
-dependencies = [
-    "crewai[tools]>=0.76.2",
-    "langchain-core>=0.2.30",
-]
 
 [project.scripts]
 sales_personalized_email = "sales_personalized_email.main:run"
@@ -24,6 +20,4 @@ requires = [
 ]
 build-backend = "hatchling.build"
 
-[tool.poetry.dependencies]
-python = ">=3.12,<3.13"          # or whatever you already have
-pysqlite3-binary = { version = "0.5.4", markers = "sys_platform == 'linux'" }
+

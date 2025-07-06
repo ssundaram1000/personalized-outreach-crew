@@ -1,0 +1,9 @@
+# Core packages
+crewai[tools]>=0.76.2,<1.0           # or a fixed version, e.g. crewai[tools]==0.87.2
+langchain-core>=0.2.30
+openai>=1.40,<2.0                  #  ← adjusted
+streamlit==1.45.0
+pydantic>=2.11.2
+
+# Modern SQLite runtime – Linux only
+pysqlite3-binary==0.5.4 ; sys_platform == 'linux'
